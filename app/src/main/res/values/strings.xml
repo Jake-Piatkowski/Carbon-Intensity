@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Carbon Intensity</string>
+    <string name="regions_screen_title">Carbon Intensity in UK Regions</string>
+    <string name="region_intensity">Intensity: %1$s</string>
+    <string name="region_location">Located in: %1$s</string>
+    <string name="fuel_percentage_format">%f%%</string>
+</resources>
