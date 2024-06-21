@@ -38,8 +38,8 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.ktor.client.android)
     implementation(libs.ktor.client.serialization)
-    implementation("io.ktor:ktor-client-logging:2.3.11")
-    implementation("io.ktor:ktor-client-content-negotiation:2.3.11")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.11")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation(libs.ktor.client.logging)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.kotlinx.serialization.json)
 }
