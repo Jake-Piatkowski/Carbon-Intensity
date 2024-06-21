@@ -23,4 +23,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Carbon Intensity"
 include(":app")
- 
+include(":network")

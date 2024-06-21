@@ -1,6 +1,7 @@
 package com.jbpi.carbonintensity
 
 import android.app.Application
+import com.jbpi.carbonintensity.network.di.getCarbonIntensityRegionModule
 import com.jbpi.carbonintensity.network.di.getNetworkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -11,9 +12,11 @@ class CarbonIntensityApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        val combinedModules = getMainModule().plus(getNetworkModule())
+        val combinedModules = getMainModule()
+            .plus(getNetworkModule())
+            .plus(getCarbonIntensityRegionModule())
 
-        startKoin{
+        startKoin {
             androidLogger()
             androidContext(this@CarbonIntensityApplication)
             modules(combinedModules)
